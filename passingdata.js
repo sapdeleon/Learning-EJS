@@ -14,6 +14,7 @@ app.post("/submit", (req, res) => {
     const data = {
         fName: req.body["fName"],
         lName: req.body["lName"],
+        numLetters: req.body["fName"].length + req.body["lName"].length,
     };
     res.render("passingdata.ejs", data);
 });

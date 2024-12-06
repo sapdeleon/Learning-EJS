@@ -8,8 +8,9 @@
 </head>
 
 <body>
-  <% if (locals.fName) { %>
-    <p>Number of letters in your name: <%= fName.length + lName.length %></p>
+  <% if (locals.numLetters) { %>
+    <p>Number of letters in your name: <%= numLetters %></p>
+    <p>Full Name: <%= fName %> <%= lName %></p>
   <% } else { %>
     <p>Enter your name below.</p>
   <% } %>
